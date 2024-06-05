@@ -29,8 +29,8 @@ Welcome to our Photo Gallery & Image Upload project! This web application allows
    git clone https://github.com/Rishu18D/Photo_gallery.git
 
 
-   ## Backend Setup
 
+## Backend Setup
 Navigate to the backend directory:
 
 ```bash

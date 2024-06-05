@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center my-5">Photo Upload and Gallery</h1>
+
+        <!-- Upload Form -->
+        <form id="uploadForm" class="mb-5">
+            <div class="input-group mb-3">
+                <input type="file" id="fileInput" class="form-control" accept="image/*">
+                <button type="submit" class="btn btn-primary">Upload Image</button>
+            </div>
+        </form>
+
+        <!-- Camera Section -->
+        <div id="cameraContainer" style="display:none;">
+            <video id="camera" class="mb-3" autoplay></video>
+            <button id="captureButton" class="btn btn-primary">Capture Photo</button>
+        </div>
+
+        <!-- Take Photo from Camera Button -->
+        <button id="startCameraButton" class="btn btn-primary mb-5">Upload from Camera</button>
+
+        <!-- Image Gallery -->
+        <div id="imageGallery" class="gallery row"></div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>

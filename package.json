@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "description": "A modern photo gallery website",
-  "keywords": ["photo", "gallery", "website"],
+  "keywords": [
+    "photo",
+    "gallery",
+    "website"
+  ],
   "author": "Rishu Singh",
   "license": "ISC",
   "scripts": {
@@ -14,5 +18,8 @@
   "devDependencies": {
     "concurrently": "^8.2.2",
     "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }

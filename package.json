@@ -1,0 +1,18 @@
+{
+  "name": "my_gallery_website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "A modern photo gallery website",
+  "keywords": ["photo", "gallery", "website"],
+  "author": "Rishu Singh",
+  "license": "ISC",
+  "scripts": {
+    "frontend": "npm start --prefix frontend",
+    "backend": "nodemon backend/index.js",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.1"
+  }
+}

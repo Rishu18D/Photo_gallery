@@ -1,7 +1,7 @@
 // src/api.js
 
 export const fetchImages = async () => {
-    const response = await fetch('http://localhost:8080/api/images/all');
+    const response = await fetch('https://photo-gallery-backend-t5vk.onrender.com/api/images/all');
     if (!response.ok) {
         throw new Error('Failed to fetch images');
     }
@@ -9,7 +9,7 @@ export const fetchImages = async () => {
 };
 
 export const uploadImage = async (formData) => {
-    const response = await fetch('http://localhost:8080/api/images/upload', {
+    const response = await fetch('https://photo-gallery-backend-t5vk.onrender.com/api/images/upload', {
         method: 'POST',
         body: formData,
     });
@@ -20,7 +20,7 @@ export const uploadImage = async (formData) => {
 };
 
 export const deleteImage = async (imageId) => {
-    const response = await fetch(`http://localhost:8080/api/images/${imageId}`, {
+    const response = await fetch(`https://photo-gallery-backend-t5vk.onrender.com/api/images/${imageId}`, {
         method: 'DELETE',
     });
     if (!response.ok) {
